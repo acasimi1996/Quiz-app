@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kviz Aplikacija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>JavaScript Kviz 🧠</h1>
+        
+        <!-- Kontejner za pitanja i ponuđene odgovore -->
+        <div id="quizBox">
+            <div id="questionText" class="question">Pitanje se učitava...</div>
+            <div id="answerButtons" class="btn-grid">
+                <!-- Dugmad sa odgovorima se dinamički ubacuju preko JavaScript-a -->
+            </div>
+        </div>
+
+        <!-- Kontejner za prikaz rezultata (inicijalno sakriven) -->
+        <div id="scoreContainer" class="score-container hidden">
+            <h2>Kraj kviza!</h2>
+            <p id="scoreText">Osvojio/la si X od Y poena.</p>
+            <button id="restartBtn">Igraj ponovo</button>
+        </div>
+
+        <!-- Dugme za sledeće pitanje -->
+        <button id="nextBtn" class="next-btn hidden">Sledeće pitanje</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

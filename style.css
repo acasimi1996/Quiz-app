@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quiz-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 650;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.btn-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Stil za dugmad sa odgovorima */
+.btn-grid button {
+    background-color: #f1f2f6;
+    color: #2d3436;
+    border: 1px solid #dfe4ea;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.btn-grid button:hover:not(:disabled) {
+    background-color: #74b9ff;
+    color: white;
+    border-color: #74b9ff;
+}
+
+/* Klase za tačne i netačne odgovore koje dodajemo preko JS-a */
+.correct {
+    background-color: #2ecc71 !important;
+    color: white !important;
+    border-color: #2ecc71 !important;
+}
+
+.incorrect {
+    background-color: #e74c3c !important;
+    color: white !important;
+    border-color: #e74c3c !important;
+}
+
+.next-btn, #restartBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.next-btn:hover, #restartBtn:hover {
+    background-color: #5849be;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.score-container {
+    text-align: center;
+}
+
+.score-container h2 {
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.score-container p {
+    font-size: 18px;
+    color: #636e72;
+    margin-bottom: 20px;
+}
